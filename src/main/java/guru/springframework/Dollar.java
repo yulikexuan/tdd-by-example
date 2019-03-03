@@ -16,5 +16,10 @@ public class Dollar {
 		return new Dollar(this.amount * multiplier);
 	}
 	
-}
-///:~
+	@Override
+	public boolean equals(Object o) {
+		Dollar other = (Dollar)o;
+		return this.amount == other.amount;
+	}
+	
+}///:~
