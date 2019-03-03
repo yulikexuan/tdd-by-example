@@ -17,11 +17,12 @@ public class MoneyTest {
 		// Given
 		Dollar five = new Dollar(5);
 		
-		// When
-		five.times(2);
-		
-		// Then
-		assertEquals(10, five.amount);
+		// When & then
+		Dollar product = five.times(2);
+		assertEquals(10, product.amount);
+
+		product = five.times(3);
+		assertEquals(15, product.amount);
 	}
 
 }
